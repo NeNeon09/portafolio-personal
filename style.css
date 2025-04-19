@@ -1,0 +1,318 @@
+:root {
+    --primar-color: #08458b;
+    --secundar-color: #F5F5F5;
+    --color-texto: #333;
+    --color-acento: #a14037;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--color-texto);
+}
+
+/* Navegador */
+a {
+    text-decoration: none;
+    color: var(--color-texto);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--primar-color);
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: var(--color-acento);
+    font-size: 20px;
+    transition: .4s;
+}
+
+/* Sección de bienvenida */
+.bienvenida {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: var(--secundar-color);
+    text-align: center;
+}
+
+.bienvenida .contenido {
+    max-width: 800px;
+    margin: auto;
+}
+
+.bienvenida .contenido h1 {
+    font-size: 2.5rem;
+    color: var(--primar-color);
+}
+
+.bienvenida .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-acento);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.bienvenida .btn:hover {
+    background-color: #FF4A3C;
+}
+
+.bienvenida .imagen img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Sección sobre mí */
+.sobremi {
+    padding: 50px;
+    text-align: center;
+    background-color: var(--secundar-color);
+}
+
+.sobremi h2 {
+    font-size: 2rem;
+    color: var(--color-texto);
+}
+
+.sobremi p {
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+.sobremi img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Sección de habilidades */
+.habilidades {
+    padding: 50px;
+    text-align: center;
+    background-color: var(--primar-color);
+    color: white;
+}
+
+.habilidades h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.habilidades .habilidad {
+    margin: 20px 0;
+}
+
+.habilidades ul {
+    list-style: none;
+    padding: 0;
+}
+
+.habilidades li {
+    margin: 5px 0;
+}
+
+/* Sección de servicios */
+.servicios {
+    padding: 50px;
+    text-align: center;
+    background-color: var(--secundar-color);
+}
+
+.servicios h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.servicios .servicio {
+    margin: 20px 0;
+}
+
+/* Sección de portafolio */
+.portafolio {
+    padding: 50px;
+    text-align: center;
+    background-color: var(--secundar-color);
+}
+
+.portafolio h2 {
+    font-size: 2.5rem;
+    color: var(--primar-color);
+    margin-bottom: 20px;
+}
+
+.portafolio p {
+    color: var(--color-texto);
+    margin-bottom: 40px;
+}
+
+/* Cards de proyectos */
+.proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 95%;
+    height: auto;
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    color: var(--primar-color);
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 0.9rem;
+    color: var(--color-texto);
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.boton-ver {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: var(--color-acento);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.boton-ver:hover {
+    background-color: #FF4A3C;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primar-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer a {
+    color: var(--color-acento);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .redes a {
+    margin: 0 10px;
+}
+
+/* Estilo para el enlace de GitHub */
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-texto);
+    margin-left: 10px;
+}
+
+.github-link:hover {
+    color: var(--color-acento);
+}
+
+/* Ajuste del tamaño del ícono */
+.github-icon {
+    width: 12px; /* Tamaño más pequeño */
+    height: 12px;
+    margin-right: 5px; /* Espacio entre el ícono y el texto */
+    fill: currentColor; /* Hereda el color del texto */
+}
+
+/* Estilo para los enlaces de redes sociales */
+.redes a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-texto);
+    margin: 0 10px;
+    font-size: 1rem;
+}
+
+.redes a:hover {
+    color: var(--color-acento);
+}
+
+/* Estilo para los íconos */
+.icon {
+    width: 16px; /* Tamaño pequeño para los íconos */
+    height: 16px;
+    margin-right: 5px; /* Espacio entre el ícono y el texto */
+    vertical-align: middle;
+}
+
+/* Responsividad */
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bienvenida {
+        padding: 20px;
+    }
+
+    .sobremi p {
+        width: 90%;
+    }
+
+    .habilidades {
+        flex-direction: column;
+    }
+
+    .servicios {
+        flex-direction: column;
+    }
+}
